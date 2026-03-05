@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Card Collection API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Playing Card Collection API</h1>
+
+<div class="container">
+
+<div class="panel">
+
+<h2>Add Card</h2>
+
+<input id="suit" placeholder="Suit">
+<input id="value" placeholder="Value">
+<input id="collection" placeholder="Collection">
+
+<button onclick="addCard()">POST /api/cards</button>
+
+</div>
+
+
+<div class="panel">
+
+<h2>Update Card</h2>
+
+<input id="updateId" placeholder="Card ID">
+<input id="updateSuit" placeholder="Suit">
+<input id="updateValue" placeholder="Value">
+<input id="updateCollection" placeholder="Collection">
+
+<button onclick="updateCard()">PUT /api/cards/:id</button>
+
+</div>
+
+
+<div class="panel">
+
+<h2>Delete Card</h2>
+
+<input id="deleteId" placeholder="Card ID">
+
+<button onclick="deleteCard()">DELETE /api/cards/:id</button>
+
+</div>
+
+
+<div class="panel">
+
+<h2>Get All Cards</h2>
+
+<button onclick="getCards()">GET /api/cards</button>
+
+<pre id="output"></pre>
+
+</div>
+
+</div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
